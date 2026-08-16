@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Antisipasi Pejabat"
+message: "Jika memakai software ini dalam penelitian, sitasi release dan dokumentasi metodologi."
+type: software
+version: 0.1.0.0
+date-released: 2026-08-17
+authors:
+  - family-names: "Wibisono"
+    given-names: "Aires Zam"
+license: CC0-1.0

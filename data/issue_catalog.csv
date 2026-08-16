@@ -1,0 +1,12 @@
+code,label,examples
+ekonomi,Ekonomi,"harga energi; pangan; inflasi; daya beli"
+ketenagakerjaan,Ketenagakerjaan,"upah; PHK; outsourcing; kondisi kerja"
+korupsi_dan_integritas,Korupsi dan integritas,"akuntabilitas; konflik kepentingan; integritas"
+pendidikan,Pendidikan,"biaya pendidikan; kebijakan kampus; anggaran"
+kebijakan_publik,Kebijakan publik,"regulasi; program; prioritas anggaran"
+pemilu_dan_demokrasi,Pemilu dan demokrasi,"aturan pemilu; representasi; institusi"
+lingkungan_dan_agraria,Lingkungan dan agraria,"lahan; tambang; pencemaran"
+ham_dan_kebebasan_sipil,HAM dan kebebasan sipil,"kebebasan berpendapat; hak sipil"
+pelayanan_publik,Pelayanan publik,"transportasi; kesehatan; layanan dasar"
+sektoral_lokal,Sektoral/lokal,"petani; nelayan; pengemudi; penambang; profesi"
+bencana_dan_respons,Bencana dan respons,"penanganan bencana; bantuan; pemulihan"
