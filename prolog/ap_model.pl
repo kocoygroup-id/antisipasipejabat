@@ -220,30 +220,30 @@ risk_band(S, sedang) :- S < 60, !.
 risk_band(S, tinggi) :- S < 80, !.
 risk_band(_, sangat_tinggi).
 
-predicted_state(L, E, 'tidak_ada_aksi_besar_terdeteksi') :- L < 35, !.
+predicted_state(L, _E, 'tidak_ada_aksi_besar_terdeteksi') :- L < 35, !.
 predicted_state(_L, E, 'peaceful_protest_paling_mungkin') :- E < 35, !.
 predicted_state(_L, E, 'risiko_protest_with_intervention') :- E < 58, !.
 predicted_state(_L, E, 'risiko_excessive_force_or_violent_demonstration_meningkat') :- E >= 58.
 
-scope_likelihood_bonus(lokal, 0).
-scope_likelihood_bonus(kota, 1).
-scope_likelihood_bonus(provinsi, 2).
-scope_likelihood_bonus(multi_provinsi, 4).
-scope_likelihood_bonus(nasional, 5).
+scope_likelihood_bonus(lokal, 0) :- !.
+scope_likelihood_bonus(kota, 1) :- !.
+scope_likelihood_bonus(provinsi, 2) :- !.
+scope_likelihood_bonus(multi_provinsi, 4) :- !.
+scope_likelihood_bonus(nasional, 5) :- !.
 scope_likelihood_bonus(_, 0).
 
-scope_spread_bonus(lokal, -8).
-scope_spread_bonus(kota, -3).
-scope_spread_bonus(provinsi, 1).
-scope_spread_bonus(multi_provinsi, 5).
-scope_spread_bonus(nasional, 8).
+scope_spread_bonus(lokal, -8) :- !.
+scope_spread_bonus(kota, -3) :- !.
+scope_spread_bonus(provinsi, 1) :- !.
+scope_spread_bonus(multi_provinsi, 5) :- !.
+scope_spread_bonus(nasional, 8) :- !.
 scope_spread_bonus(_, 0).
 
-scope_scale_adjust(lokal, -12).
-scope_scale_adjust(kota, -5).
-scope_scale_adjust(provinsi, 0).
-scope_scale_adjust(multi_provinsi, 8).
-scope_scale_adjust(nasional, 12).
+scope_scale_adjust(lokal, -12) :- !.
+scope_scale_adjust(kota, -5) :- !.
+scope_scale_adjust(provinsi, 0) :- !.
+scope_scale_adjust(multi_provinsi, 8) :- !.
+scope_scale_adjust(nasional, 12) :- !.
 scope_scale_adjust(_, 0).
 
 sum_contributions(Cs, Sum) :-

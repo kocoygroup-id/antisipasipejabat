@@ -39,7 +39,7 @@ prompt_number(Label, Min, Max, Default, Value) :-
 
 prompt_choice(Label, Options, DefaultIndex, Value) :-
     format('~n~w~n', [Label]),
-    forall(member(I-V-Text, Options), format('  [~w] ~w~n', [I, Text])),
+    forall(member(I-_V-Text, Options), format('  [~w] ~w~n', [I, Text])),
     repeat,
       format('Pilih [~w]: ', [DefaultIndex]), flush_output,
       read_line_to_string(user_input, S0), normalize_space(string(S), S0),

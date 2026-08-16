@@ -16,10 +16,10 @@ mengidentifikasi individu, tidak mengumpulkan data pribadi, dan tidak memberikan
 rekomendasi penindakan terhadap demonstran.
 */
 
-:- use_module(ap_version).
-:- use_module(ap_defaults).
-:- use_module(ap_model).
-:- use_module(ap_cli).
+:- use_module(ap_version, []).
+:- use_module(ap_defaults, []).
+:- use_module(ap_model, []).
+:- use_module(ap_cli, []).
 
 version(V) :- ap_version:version(V).
 default_scenario(S) :- ap_defaults:default_scenario(S).

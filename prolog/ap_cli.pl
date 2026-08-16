@@ -137,13 +137,13 @@ save_screen(S) :-
     ap_ui:prompt_string('Nama file', 'skenario', F),
     catch((ap_io:save_scenario(F,S), format('Tersimpan.~n',[])), E, print_message(error,E)).
 
-load_screen(S0, S) :-
+load_screen(_S0, S) :-
     ap_ui:prompt_string('File skenario', 'skenario.ap.pl', F),
     catch(ap_io:load_scenario(F,S1), E, (print_message(error,E), fail)), !, S=S1.
 load_screen(S, S).
 
 
-example_screen(S0, S) :-
+example_screen(_S0, S) :-
     Options = [
       1-'scenario_bbm.ap.pl'-'BBM / tekanan ekonomi',
       2-'scenario_ukt.ap.pl'-'UKT / pendidikan',

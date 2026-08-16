@@ -4,6 +4,6 @@
 
 test(no_notification_not_auto_illegal) :-
     default_scenario(D), put_dict(notified,D,no,S), legal_note(S,Note),
-    sub_string(Note, _, _, _, 'tidak boleh otomatis').
+    once(sub_string(Note, _, _, _, 'tidak boleh otomatis')).
 
 :- end_tests(ap_legal).

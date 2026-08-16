@@ -8,6 +8,6 @@ description([
 version('0.1.0.0').
 author('Aires Zam Wibisono', 'kocoy.group@gmail.com').
 maintainer('Aires Zam Wibisono', 'kocoy.group@gmail.com').
-home('https://github.com/kocoygroup-id/antisipasi-pejabat').
-download('https://github.com/kocoygroup-id/antisipasi-pejabat.git').
+home('https://github.com/kocoygroup-id/antisipasipejabat').
+download('https://github.com/kocoygroup-id/antisipasipejabat.git').
 requires(prolog >= '9.1.18').

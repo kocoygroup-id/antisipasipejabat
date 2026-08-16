@@ -1,6 +1,6 @@
 :- begin_tests(ap_model).
-:- use_module(library(antisipasipejabat)).
-:- use_module(library(ap_model)).
+:- use_module(library(antisipasipejabat), [default_scenario/1, score/2]).
+:- use_module(library(ap_model), [crowd_bucket/2]).
 
 low_scenario(S) :-
     default_scenario(D),
